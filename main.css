@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body {
+  min-width: 300px;
+  background: rgba(143, 101, 147, 0.6);
+  font-family: Lato; 
+  color: white;
+  line-height: 1.5;
+}
+
+section article {
+    color: #FCFCFF;
+    margin: 15px;
+}
+
+code {
+	background: #C1CEFE;
+	padding: 15px;
+	border: 1px;
+	border-radius: 3px;
+	color: black;
+}
+
+#navbar li {
+	list-style: none;
+	border-top: 1px solid;
+	width: 100%;
+}
+
+#navbar ul {
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#navbar a {
+    display: block;
+    padding: 15px;
+    color: #4d4e53;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#navbar {
+	position: fixed;
+    min-width: 290px;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    border-right: solid;
+    border-color: rgba(0, 22, 22, 0.4);
+	background: #C1CEFE;
+}
+
+#navbar-title {
+	padding: 15px;
+	margin-left: 15px;
+	color: rgba(93, 115, 126);
+}
+
+#main-doc {
+	position: relative;
+	margin-left: 330px;
+}
+
+.main-section {
+	background: rgba(143, 101, 147, 0.6);
+	padding: 15px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	border: 1px;
+	border-radius: 3px;
+}
+
+@media only screen and (max-width: 815px) {
+	#navbar {
+	    position: absolute;
+		background: #C1CEFE;
+	    top: 0;
+	    padding: 0px;
+	    width: 100%;
+	    max-height: 400px;
+	    border: none;
+	    z-index: 1;
+	    border-bottom: 2px solid;
+ 	}
+ 	#navbar-title {
+ 		text-align: center;
+ 		padding: 0;
+ 	}
+}
